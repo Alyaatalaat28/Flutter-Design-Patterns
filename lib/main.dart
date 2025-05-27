@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_design_patterns/patterns/decorator/coffee_screen.dart';
+import 'package:flutter_design_patterns/patterns/factory_method/pizza_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       title: 'Flutter Design Patterns',
-      home: CoffeeScreen(),
+      home: PizzaScreen(),
     );
   }
 }
