@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_design_patterns/patterns/command/remote_screen.dart';
+import 'package:flutter_design_patterns/patterns/adapter/adapter_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       title: 'Flutter Design Patterns',
-      home: RemoteScreen(),
+      home: AdapterScreen(),
     );
   }
 }
