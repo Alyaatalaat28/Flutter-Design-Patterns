@@ -49,6 +49,63 @@ Key files:
 
 ---
 
+## Design Patterns
+
+### 1. Decorator Pattern
+- **Purpose**: Extends an object’s behavior dynamically by wrapping it with decorators that add functionality.
+- **Example**: A coffee shop where users select a base beverage (e.g., Espresso, House Blend) and add condiments (e.g., Mocha, Whip) via a UI. The app calculates the total cost and updates the description dynamically, showing how decorators stack behaviors.
+- **Location**: [lib/patterns/decorator/](lib/patterns/decorator/)
+
+### 2. Factory Method Pattern
+- **Purpose**: Defines an interface for creating objects, letting subclasses decide which class to instantiate.
+- **Example**: A pizza store where users choose a store (New York or Chicago) and pizza type (cheese or veggie). The UI displays the preparation steps for the selected pizza, demonstrating how each store’s factory method creates region-specific pizzas.
+- **Location**: [lib/patterns/factory_method/](lib/patterns/factory_method/)
+
+### 3. Singleton Pattern
+- **Purpose**: Ensures a class has only one instance and provides global access to it.
+- **Example**: A coffee shop inventory manager where users add or use coffee beans and milk. The UI shows that multiple references access the same Singleton instance, updating inventory levels consistently across the app.
+- **Location**: [lib/patterns/singleton/](lib/patterns/singleton/)
+
+### 4. Command Pattern
+- **Purpose**: Encapsulates requests as objects, allowing parameterization, queuing, and undoable operations.
+- **Example**: A remote control for home devices (light, ceiling fan). Users press buttons to execute commands (e.g., Light On, Fan High) or undo the last action. The UI displays device states and a command log, showing command encapsulation and reversibility.
+- **Location**: [lib/patterns/command/](lib/patterns/command/)
+
+### 5. Adapter Pattern
+- **Purpose**: Converts one interface into another, allowing incompatible classes to work together.
+- **Example**: A duck and turkey scenario where a turkey is adapted to act like a duck. The UI lets users select a duck or an adapted turkey, triggering behaviors (quack, fly) to show how the adapter maps turkey actions to duck expectations.
+- **Location**: [lib/patterns/adapter/](lib/patterns/adapter/)
+
+### 6. Facade Pattern
+- **Purpose**: Provides a simplified interface to a complex subsystem.
+- **Example**: A home theater system where users watch or end a movie with a single button. The UI shows subsystem actions (e.g., projector on, DVD play) coordinated by the facade, simplifying complex operations into a unified interface.
+- **Location**: [lib/patterns/facade/](lib/patterns/facade/)
+
+### 7. State Pattern
+- **Purpose**: Allows an object to change its behavior when its internal state changes, encapsulating state-specific logic.
+- **Example**: A gumball machine where users insert quarters, turn the crank, or eject quarters. The UI reflects the machine’s state (e.g., NoQuarter, HasQuarter) and gumball count, showing how state transitions drive behavior.
+- **Location**: [lib/patterns/state/](lib/patterns/state/)
+
+### 8. Template Method Pattern
+- **Purpose**: Defines the skeleton of an algorithm, letting subclasses customize specific steps.
+- **Example**: A beverage preparation system for coffee and tea. Users select a beverage, and the UI displays the preparation steps (e.g., brewing, adding condiments), showing how the template method enforces a consistent process with customizable steps.
+- **Location**: [lib/patterns/template_method/](lib/patterns/template_method/)
+
+### 9. Iterator Pattern
+- **Purpose**: Provides sequential access to a collection’s elements without exposing its internal structure.
+- **Example**: A diner and pancake house menu where users view menu items. The UI uses iterators to display items from different collections (array, List), with a vegetarian filter, demonstrating uniform traversal.
+- **Location**: [lib/patterns/iterator/](lib/patterns/iterator/)
+
+### 10. Composite Pattern
+- **Purpose**: Treats individual objects and compositions uniformly, forming a tree-like structure.
+- **Example**: A menu hierarchy with menus (e.g., Diner, Pancake House) and items. The UI displays an expandable tree, allowing users to view the structure and filter vegetarian items, showing uniform treatment of composites and leaves.
+- **Location**: [lib/patterns/composite/](lib/patterns/composite/)
+
+### 11. Proxy Pattern
+- **Purpose**: Controls access to an object, acting as a surrogate to add functionality like logging or remote access.
+- **Example**: A gumball machine monitored via a proxy. The UI shows the machine’s state (location, count, state) and allows actions (insert quarter, turn crank) through the proxy, with a log of interactions demonstrating controlled access.
+- **Location**: [lib/patterns/proxy/](lib/patterns/proxy/)
+
 ## Getting Started
 
 ### Prerequisites
